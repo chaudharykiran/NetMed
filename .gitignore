@@ -1,0 +1,14 @@
+# Compiled source #
+###################
+*.pyc
+
+
+# Files #
+#########
+static
+
+
+# Database #
+############
+db.sqlite3
+
