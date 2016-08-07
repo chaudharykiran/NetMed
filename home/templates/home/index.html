@@ -3,8 +3,168 @@
 
 
 {% block content %}
-	<div>
-		This is home page.
-	</div>
+  <!-- background image and search box container -->
+  <div>
+    <!-- parallex container -->
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="{% static '/img/search-bg.jpg' %}">
+      </div>
+    </div>
+    <!-- end of parallex container -->
+
+    <!-- search box -->
+    <div class="container">
+      <div class="card">
+        <div class="card-content">
+
+            <div class="row">
+
+              <!-- search-widget container -->
+              <div class="col s12 m8" style="border-right: 2px solid black;">
+
+                <div class="row">
+                  <div class="col s12">
+                    <h5>Search from Thousand of products available</h5>
+                  </div>
+                </div>
+
+                <div class="row" style="margin-bottom: 0px;">
+                  <div class="col s12">
+                    <div class="row"  style="margin-bottom: 0px;">
+                        <form class="col s12 m12">
+                            <div class="row" style="margin-bottom: 0px;">
+                                <div class="input-field col s12 m8">
+                                    <input id="query" type="text">
+                                    <label for="query" data-error="wrong" data-success="right">Search...</label>
+                                </div>
+                                <div class="col s12 m4">
+                                    <i class="waves-effect waves-light btn-large waves-input-wrapper">
+                                        <input type="submit" class="waves-button-input" value="Search">
+                                    </i>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <!-- end search-widget -->
+
+              <!-- upload precaution widget -->
+              <div class="col s12 m4">
+                  <div class="row center">
+                      <h5>Upload Precription</h5>
+                  </div>
+                  <div class="row center">
+                      <i class="waves-effect waves-light btn-large waves-input-wrapper">
+                          <input type="submit" class="waves-button-input" value="Upload">
+                      </i>
+                  </div>
+              </div>
+              <!-- end upload precaution -->
+
+            </div>
+
+
+        </div>
+      </div>
+
+      <div class="row center">
+          <p>Not sure how to buy medicine online? <a href="#">Click here to see how it work</a></p>
+      </div>
+
+    </div>
+    <!-- end search box -->
+
+  </div>
+  <!-- end of container -->
+
+ <!-- featured category container -->
+ <div class="container">
+
+     <div class="row center">
+         <h4>FEATURED CATEGORIES</h4>
+     </div>
+
+     <div class="row">
+         <div class="col s12 m3">
+             <div class="card">
+                 <div class="card-image waves-effect waves-block waves-light">
+                     <img class="activator" src="{% static '/img/horlicks.JPG' %}">
+                 </div>
+                 <div class="card-content">
+                     <span class="card-title activator grey-text text-darken-4">Horlicks
+                         <i class="material-icons right">more_vert</i>
+                     </span>
+                 </div>
+                 <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Horlicks
+                          <i class="material-icons right">close</i>
+                      </span>
+                      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                 </div>
+             </div>
+         </div>
+         <div class="col s12 m3">
+            <div class="card">
+                 <div class="card-image waves-effect waves-block waves-light">
+                     <img class="activator" src="{% static '/img/horlicks.JPG' %}">
+                 </div>
+                 <div class="card-content">
+                     <span class="card-title activator grey-text text-darken-4">Horlicks
+                         <i class="material-icons right">more_vert</i>
+                     </span>
+                 </div>
+                 <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Horlicks
+                          <i class="material-icons right">close</i>
+                      </span>
+                      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                 </div>
+             </div>
+         </div>
+         <div class="col s12 m3">
+
+            <div class="card">
+                 <div class="card-image waves-effect waves-block waves-light">
+                     <img class="activator" src="{% static '/img/horlicks.JPG' %}">
+                 </div>
+                 <div class="card-content">
+                     <span class="card-title activator grey-text text-darken-4">Horlicks
+                         <i class="material-icons right">more_vert</i>
+                     </span>
+                 </div>
+                 <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Horlicks
+                          <i class="material-icons right">close</i>
+                      </span>
+                      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                 </div>
+             </div>
+         </div>
+         <div class="col s12 m3">
+             <div class="card">
+                 <div class="card-image waves-effect waves-block waves-light">
+                     <img class="activator" src="{% static '/img/horlicks.JPG' %}">
+                 </div>
+                 <div class="card-content">
+                     <span class="card-title activator grey-text text-darken-4">Horlicks
+                         <i class="material-icons right">more_vert</i>
+                     </span>
+                 </div>
+                 <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Horlicks
+                          <i class="material-icons right">close</i>
+                      </span>
+                      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                 </div>
+             </div>
+         </div>
+     </div>
+
+ </div>
+ <!-- end featured category container -->
 
 {% endblock %}
