@@ -5,11 +5,10 @@
 
 # Files #
 #########
-static
-staticfiles
+#static
+#staticfiles
 
 
 # Database #
 ############
 db.sqlite3
-
