@@ -5,8 +5,8 @@
 
 # Files #
 #########
-#static
-#staticfiles
+static
+staticfiles
 
 
 # Database #
