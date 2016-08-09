@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 """
 
 import os
-import psycopy2
+import psycopg2
 import urlparse
 import dj_database_url
 
@@ -91,7 +91,7 @@ WSGI_APPLICATION = 'NetMed.wsgi.application'
 #    }
 #}
 
-urlparse.uses_netloc.appentd("postgres")
+urlparse.uses_netloc.append("postgres")
 url = urlparse.urlparse(os.environ["DATABASE_URL"])
 
 conn = psycopy2.connect(
