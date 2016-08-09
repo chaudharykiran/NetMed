@@ -11,6 +11,9 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 """
 
 import os
+import psycopy2
+import urlparse
+import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 #BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -81,12 +84,25 @@ WSGI_APPLICATION = 'NetMed.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(PROJECT_ROOT, 'db.sqlite3'),
-    }
-}
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': os.path.join(PROJECT_ROOT, 'db.sqlite3'),
+#    }
+#}
+
+urlparse.uses_netloc.appentd("postgres")
+url = urlparse.urlparse(os.environ["DATABASE_URL"])
+
+conn = psycopy2.connect(
+    database=url.path[1:],
+    user=url.username,
+    password=url.password,
+    host=url.hostname,
+    port=url.port
+)
+
+DATABASES['default'] = dj_database_url.config()
 
 
 # Password validation
